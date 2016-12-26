@@ -1,14 +1,10 @@
 {
-  "name": "eloyt.com",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "author": "",
-  "license": "ISC",
+  "name": "eloyt",
+  "title": "Eloyt",
+  "version": "3.3.7",
+  "homepage": "https://eloyt.com",
+  "author": "Mahan Hazrati<mahan@eloyt.com>",
   "dependencies": {
-    "express": "^4.14.0",
     "bootstrap": "^3.3.7",
     "browser-sync": "^2.13.0",
     "font-awesome": "^4.6.3",
