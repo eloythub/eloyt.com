@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap -  v1.0.0 ()
- * Copyright 2013-2016 
+ * Copyright 2013-2017 
  * Licensed under  ()
  */
 .heading-font {
@@ -362,6 +362,12 @@ section.contact ul.list-social li.social-facebook a {
 }
 section.contact ul.list-social li.social-facebook a:hover {
   background-color: #344e86;
+}
+section.contact ul.list-social li.social-instagram a {
+  background-color: #EE5858;
+}
+section.contact ul.list-social li.social-instagram a:hover {
+  background-color: #ec4141;
 }
 section.contact ul.list-social li.social-google-plus a {
   background-color: #dd4b39;
