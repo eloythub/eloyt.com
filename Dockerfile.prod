@@ -16,17 +16,15 @@ ENV TMP_DIR=/tmp
 ENV PROD_DIR=/opt/app
 
 RUN mkdir -p $TMP_DIR
-COPY yarn.lock $TMP_DIR/yarn.lock
-COPY package.json $TMP_DIR/package.json
+COPY ./yarn.lock $TMP_DIR/yarn.lock
+COPY ./package.json $TMP_DIR/package.json
 RUN cd $TMP_DIR && yarn
 
 COPY . $PROD_DIR/
 WORKDIR $PROD_DIR
 
-CMD gulp && \
-    cd $PROD_DIR && \
-	ln -sf /tmp/node_modules && \
-	rm -rf .pm2 && \
+CMD ln -sf /tmp/node_modules && \
+    cd $PROD_DIR && gulp && \
 	pm2-docker index.js
 
 EXPOSE 80

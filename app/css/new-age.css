@@ -153,9 +153,9 @@ header {
   overflow-y: hidden;
   background: url("../img/bg-pattern.png"), #000;
   /* fallback for old browsers */
-  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to bottom, #000, #3b5998);
+  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to bottom, #000, #000);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: url("../img/bg-pattern.png"), linear-gradient(to bottom, #000, #3b5998);
+  background: url("../img/bg-pattern.png"), linear-gradient(to bottom, #000, #000);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
 }
@@ -284,8 +284,8 @@ section.features .feature-item h3 {
 }
 section.features .feature-item i {
   font-size: 80px;
-  background: -webkit-linear-gradient(to left, #000, #3b5998);
-  background: linear-gradient(to left, #000, #3b5998);
+  background: -webkit-linear-gradient(to left, #000, #000);
+  background: linear-gradient(to left, #000, #000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
