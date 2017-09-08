@@ -146,17 +146,24 @@ p {
     color: #000;
   }
 }
+.container {
+  z-index: 1;
+}
+#eloyt-intro-particles,
+#eloyt-download-particles {
+  z-index: 0;
+}
+.particles-js-canvas-el {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 header {
   position: relative;
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: url("../img/bg-pattern.png"), #000;
-  /* fallback for old browsers */
-  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to bottom, #000, #000);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: url("../img/bg-pattern.png"), linear-gradient(to bottom, #000, #000);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #000;
   color: white;
 }
 header .header-content {
@@ -331,6 +338,7 @@ section.cta .overlay {
 }
 section.contact {
   text-align: center;
+  position: relative;
 }
 section.contact h2 {
   margin-top: 0;
